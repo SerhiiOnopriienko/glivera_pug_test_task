@@ -1,0 +1,6 @@
+mixin dashboard_menu_item(imgSrc, altText, text)
+    div.dashboard-menu--item 
+        div.dashboard-menu--name
+            img(src=imgSrc alt=altText)
+            p.hideOnMobile= text 
+        img(src="../../assets/icons/arrow_right.svg" alt="arrow")

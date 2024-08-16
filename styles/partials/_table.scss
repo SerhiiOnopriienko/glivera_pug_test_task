@@ -1,0 +1,226 @@
+.table {
+  margin-top: 5.1rem;
+  background-color: $background-color-secondary;
+  //   width: 20%;
+  width: clamp(20%, 65vw, 96.8rem);
+  overflow: scroll;
+  border-radius: 30px;
+
+  &-header {
+    // display: flex;
+    // align-content: center;
+    // justify-content: space-between;
+    padding: 1.5rem 2.5rem 2rem 1.9rem;
+
+    &--name {
+      margin-bottom: 2rem;
+      & h2 {
+        font-size: 1.8rem;
+        font-weight: 500;
+        margin-bottom: 5px;
+      }
+
+      & p {
+        font-size: 1.2rem;
+        color: #16c098;
+      }
+    }
+
+    &--input {
+      position: relative;
+
+      & img {
+        position: absolute;
+        top: 7px;
+        left: 8px;
+      }
+
+      & input {
+        padding-left: 40px;
+        height: 3.8rem;
+        width: 10rem;
+        border: none;
+        border-radius: 10px;
+        background-color: $background-color-tertiary;
+      }
+    }
+  }
+
+  &-main {
+    width: 750px;
+    &--row {
+      border-bottom: 1px solid $table-border-color;
+      font-size: 1.2rem;
+    }
+
+    &--row_content {
+      & td {
+        margin: 1rem 0;
+      }
+
+      & td:first-child {
+        text-indent: 1.5rem;
+      }
+    }
+  }
+
+  &-footer {
+    // display: flex;
+    // justify-content: space-between;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+
+    &--info {
+      color: $text-color-fourtiary;
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+    }
+
+    &--pagination {
+      display: flex;
+
+      & p {
+        margin-left: 1.2rem;
+        width: 26px;
+        height: 24px;
+        background-color: $background-color-fourtiary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        cursor: pointer;
+        padding: 0 0.5rem;
+
+        & img {
+          width: 8px;
+        }
+      }
+    }
+  }
+}
+
+.heading {
+  color: $text-color-fourtiary;
+  text-align: left;
+
+  & th:first-child {
+    padding-left: 1.5rem;
+  }
+
+  & th {
+    padding-bottom: 1rem;
+  }
+}
+
+.active,
+.inactive {
+  width: 8rem;
+  height: 2.9rem;
+  border-radius: 4px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  border: 1px solid $text-color-active;
+  color: $text-color-active;
+  background-color: $color-active;
+}
+
+.inactive {
+  border: 1px solid $text-color-inactive;
+  color: $text-color-inactive;
+  background-color: $color-inactive;
+}
+
+.choosen {
+  background-color: $highlight-color !important;
+  color: $background-color-secondary;
+}
+
+.background-transparen {
+  background-color: transparent !important;
+}
+
+@media (min-width: 1440px) {
+  .table {
+    width: 96.8rem;
+
+    &-main {
+      width: 100%;
+
+      &--row_content {
+        & td {
+          margin: 2rem 0;
+        }
+
+        & td:first-child {
+          text-indent: 3.8rem;
+        }
+      }
+    }
+
+    &-header {
+      display: flex;
+      align-content: center;
+      justify-content: space-between;
+      padding: 3rem 5.3rem 4rem 3.8rem;
+
+      &--name {
+        margin-bottom: 0;
+        & h2 {
+          font-size: 2.2rem;
+        }
+
+        & p {
+          font-size: 1.4rem;
+        }
+      }
+
+      &--input {
+        & input {
+          width: 21.6rem;
+        }
+      }
+    }
+
+    &-main {
+      &--row {
+        font-size: 1.4rem;
+      }
+    }
+
+    &-footer {
+      display: flex;
+      justify-content: space-between;
+      padding: 3rem 4rem 3rem 3.8rem;
+
+      &--info {
+        margin-bottom: 0;
+      }
+
+      &--pagination {
+        & p {
+          margin-left: 1.2rem;
+          font-size: 1.2rem;
+          padding: 0;
+
+          & img {
+            width: 8px;
+          }
+        }
+      }
+    }
+  }
+
+  .heading {
+    & th:first-child {
+      padding-left: 3.8rem;
+    }
+
+    & th {
+      padding-bottom: 1.4rem;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+include ../mixins/_dashboard_menu_item.pug
+
+section.dashboard
+    div
+        div.dashboard-header
+            img(src="../../assets/icons/logo.svg" alt="logo")
+            h1.hideOnMobile Dashboard
+            span.hideOnMobile v.01
+        div.dashboard-menu
+            div.dashboard-menu--item 
+                div.dashboard-menu--name
+                    img(src="../../assets/icons/key-square.svg" alt="key")
+                    p.hideOnMobile Dashboard
+            +dashboard_menu_item("../../assets/icons/3d_square.svg", "3d_square", "Product")
+            div.dashboard-menu--item.chosen_item
+                div.dashboard-menu--name
+                    img(src="../../assets/icons/user_square.svg" alt="user")
+                    p.hideOnMobile Customers
+                img(src="../../assets/icons/arrow_right_choosen.svg" alt="arrow")
+            +dashboard_menu_item("../../assets/icons/wallet_money.svg", "wallet", "Income")
+            +dashboard_menu_item("../../assets/icons/discount_shape.svg", "discount shape", "Promote")
+            +dashboard_menu_item("../../assets/icons/message_question.svg", "message question", "Help")
+    div.dashboard-person
+        div.dashboard-person--avatar
+            img(src="../../assets/icons/user_avatar.jpg")
+        div.dashboard-person--info
+            h3 Evano
+            p Project Manager

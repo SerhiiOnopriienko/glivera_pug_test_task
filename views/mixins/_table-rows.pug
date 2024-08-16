@@ -1,0 +1,8 @@
+mixin table-rows(name, company, phoneNumber, email, country, status, classForStatus)
+    tr(class="table-main--row table-main--row_content")
+        td= name
+        td= company
+        td= phoneNumber
+        td= email
+        td= country
+        td(class=classForStatus)= status 

@@ -1,0 +1,17 @@
+.main_content {
+  margin: 4.1rem 9.5rem 0 4rem;
+
+  &--header {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main_content {
+    margin-left: 7.1rem;
+
+    &--header {
+      font-size: 2.4rem;
+    }
+  }
+}

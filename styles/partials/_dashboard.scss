@@ -1,0 +1,124 @@
+.dashboard {
+  width: 80px;
+  background-color: $background-color-secondary;
+  height: 100vh;
+  // height: 1198px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &-header {
+    margin: 2rem 0 0 1rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: fit-content;
+    cursor: pointer;
+
+    & h1 {
+      margin: 0 0.4rem 0 0.8rem;
+      font-weight: 700;
+    }
+
+    & p {
+      font-size: 2.6rem;
+    }
+
+    & span {
+      font-size: 1rem;
+      color: $text-color-fivetiary;
+      position: relative;
+      bottom: -2px;
+    }
+  }
+
+  &-menu {
+    margin: 1rem 1rem 0 1rem;
+
+    &--item {
+      width: 35px;
+      display: flex;
+      justify-content: space-between;
+      color: $text-color-tertiary;
+      margin-bottom: 0.5rem;
+      padding: 11px 8px 11px 11px;
+      cursor: pointer;
+    }
+
+    &--name {
+      display: flex;
+      align-items: center;
+
+      & img {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  &-person {
+    position: relative;
+    bottom: 0;
+    // display: flex;
+    // align-items: center;
+    margin: 0 12.3rem 7.6rem 1rem;
+
+    &--avatar {
+      margin-right: 1.2rem;
+      & img {
+        border-radius: 50%;
+        width: 42px;
+      }
+    }
+
+    &--info {
+      & h3 {
+        font-size: 1.4rem;
+        margin-bottom: 5px;
+      }
+
+      & p {
+        font-size: 1.2rem;
+        color: $text-color-fivetiary;
+      }
+    }
+  }
+}
+
+.chosen_item {
+  background-color: $highlight-color;
+  height: 24px;
+  border-radius: 8px;
+
+  & p {
+    color: $background-color-secondary;
+  }
+
+  & img {
+    width: 1.6rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .dashboard {
+    width: 306px;
+    height: 1198px;
+
+    &-header {
+      margin: 3.6rem 0 0 2.8rem;
+    }
+
+    &-menu {
+      margin: 6.4rem 2.8rem 0 2.8rem;
+      &--item {
+        width: auto;
+      }
+    }
+
+    &-person {
+      display: flex;
+      align-items: center;
+      margin: 0 12.3rem 7.6rem 2.8rem;
+    }
+  }
+}

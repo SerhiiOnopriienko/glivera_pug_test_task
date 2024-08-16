@@ -1,0 +1,41 @@
+include ../mixins/_table-rows.pug
+
+section.table 
+    div.table-header
+        div.table-header--name
+            h2 All Customers
+            p Active Members
+        div.table-header--input 
+            img(src="../../assets/icons/search_icon.svg" alt="search")
+            input(placeholder="Search")
+    table.table-main
+        tr.table-main--row.heading
+            th Customer Name
+            th Company
+            th Phone Number
+            th Email
+            th Country
+            th Status 
+        +table-rows("Jane Cooper", "Microsoft", "(225) 555-0118", "jane@microsoft.com", "United States", "Active", "active")
+        +table-rows("Floyd Miles", "Yahoo", "(205) 555-0100", "floyd@yahoo.com", "Kiribati", "Inactive", "inactive")
+        +table-rows("Ronald Richards", "Adobe", "(302) 555-0107", "ronald@adobe.com", "Israel", "Inactive", "inactive")
+        +table-rows("Marvin McKinney", "Tesla", "(252) 555-0126", "marvin@tesla.com", "Iran", "Active", "active")
+        +table-rows("Jerome Bell", "Google", "(629) 555-0129", "jerome@google.com", "Réunion", "Active", "active")
+        +table-rows("Kathryn Murphy", "Microsoft", "(406) 555-0120", "kathryn@microsoft.com", "Curaçao", "Active", "active")
+        +table-rows("Jacob Jones", "Yahoo", "(208) 555-0112", "jacob@yahoo.com", "Brazil", "Active", "active")
+        +table-rows("Kristin Watson", "Facebook", "(704) 555-0127", "kristin@facebook.com", "Åland Islands", "Inactive", "inactive")
+        
+    div.table-footer
+        div.table-footer--info
+            p Showing data 1 to 8 of  256K entries
+        div.table-footer--pagination
+            p 
+                img(src="../../assets/icons/previous.svg" alt="previous")
+            p.choosen 1
+            p.hideOnMobile 2
+            p.hideOnMobile 3
+            p.hideOnMobile 4
+            p.background-transparen ...
+            p 40
+            p 
+                img(src="../../assets/icons/next.svg" alt="next")

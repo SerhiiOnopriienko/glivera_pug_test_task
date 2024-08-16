@@ -1,0 +1,26 @@
+{
+  "name": "glivera_pug_test_task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "pug views/ -o build/",
+    "build:scss": "sass styles/main.scss build/css/styles.css",
+    "watch:scss": "sass --watch styles/main.scss build/css/styles.css",
+    "watch": "npm run watch:scss & pug views/ -o build/ -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SerhiiOnopriienko/glivera_pug_test_task.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SerhiiOnopriienko/glivera_pug_test_task/issues"
+  },
+  "homepage": "https://github.com/SerhiiOnopriienko/glivera_pug_test_task#readme",
+  "dependencies": {
+    "pug": "^3.0.3"
+  }
+}
