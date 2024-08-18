@@ -2,7 +2,6 @@
   width: 80px;
   background-color: $background-color-secondary;
   height: 100vh;
-  // height: 1198px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -59,8 +58,6 @@
   &-person {
     position: relative;
     bottom: 0;
-    // display: flex;
-    // align-items: center;
     margin: 0 12.3rem 7.6rem 1rem;
 
     &--avatar {

@@ -1,15 +1,11 @@
 .table {
   margin-top: 5.1rem;
   background-color: $background-color-secondary;
-  //   width: 20%;
   width: clamp(20%, 65vw, 96.8rem);
   overflow: scroll;
   border-radius: 30px;
 
   &-header {
-    // display: flex;
-    // align-content: center;
-    // justify-content: space-between;
     padding: 1.5rem 2.5rem 2rem 1.9rem;
 
     &--name {
@@ -65,8 +61,6 @@
   }
 
   &-footer {
-    // display: flex;
-    // justify-content: space-between;
     padding: 1.5rem 2rem 1.5rem 2rem;
 
     &--info {
